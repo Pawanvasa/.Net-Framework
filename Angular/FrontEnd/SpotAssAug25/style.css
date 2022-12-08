@@ -1,0 +1,43 @@
+  .child-1{
+    padding: 1px;
+    background-color: blue;
+    position: absolute;
+  }
+  .triangle {
+    position: relative;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid green;
+	border-bottom: 25px solid transparent;
+    left: 51px;
+}
+  .child-2{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    top:128px;
+    padding: 16px;
+    background-color: green;
+    position: relative;
+  }
+  .triangle-1 {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid blue;
+  top:37px;
+  right:16px;
+  position: relative;
+}
+.triangle-2 {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid blue;
+  top:21px;
+  left:21px;
+  position: relative;
+}
