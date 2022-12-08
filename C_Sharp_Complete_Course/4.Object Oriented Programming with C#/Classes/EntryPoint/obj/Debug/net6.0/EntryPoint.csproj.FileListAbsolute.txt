@@ -1,0 +1,15 @@
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\bin\Debug\net6.0\EntryPoint.exe
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\bin\Debug\net6.0\EntryPoint.deps.json
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\bin\Debug\net6.0\EntryPoint.runtimeconfig.json
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\bin\Debug\net6.0\EntryPoint.dll
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\bin\Debug\net6.0\EntryPoint.pdb
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.csproj.AssemblyReference.cache
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.AssemblyInfoInputs.cache
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.AssemblyInfo.cs
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.dll
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\refint\EntryPoint.dll
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.pdb
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\EntryPoint.genruntimeconfig.cache
+C:\Users\Coditas\Downloads\CSharpCourse\EntryPoint\obj\Debug\net6.0\ref\EntryPoint.dll

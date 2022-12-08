@@ -1,0 +1,275 @@
+Nayan Ranjan
+
+
+12-July-2022
+Math OPerations
+1. The Data TYpe Mdifications MUST be done for NUmeric Calculations
+2. The Data Validation for Division OPerations MUST be done using if..statement
+
+13-July-2022
+1. Ref, out is demoed
+2. String Operations
+	- Special Charachetr Logic MUST be modified, no hard-coding
+
+15-July-2022
+Arrays
+1-SOrt and reverse by length is done
+2-Even and Odd indexes is completed
+3-Prime Number is completed
+4-String with 'a' is done
+5-String starts with A,M,K, Hardcoding to check characters must be implemented
+6-Repeated strings
+7-7 and 8 problem statements completed except the values hard-coding is done which MUST be removed
+
+19-july-2022
+Not Completed as per the requirements 
+
+
+
+============================================================================================
+
+ANkita Kumari
+
+12-July-2022
+1. Math OPerations with Squareroot, POwer(), Square
+	- Squareroot:  No Done
+	- Modify Data Types for Math operations
+	- Value Verifications is not done
+
+13-July-2022
+1. String OPerations
+	- COmpleted but not able to explain why the ' ' and WhiteSpace was used in code
+
+15-july-2022
+Array Operations
+-Remove the hard coding for A,M,K
+- Rest oters are completed
+
+19-July-2022
+- Not Completed		
+
+
+=============================================================================================
+Pranjali Pawar
+
+12-July-2022
+1. Math Operations
+	- Data Types Ned to change
+13-July-2022
+String Operations
+	- Nice approach for Logic
+	- Bust MUST use the standard Methods
+	- Rest all are completed
+
+15-July-2022
+Using Arrays
+1. Hard-Coding MUST be eliminated
+2. Nice LOgic for Sorting and Reversing for Strings based on Length
+
+19-July-2022
+- Staff Project Update and Delete is pending
+
+==============================================================================================
+Prashant Agarwal
+
+12-July-2022
+
+1. Math Operations
+	- Change Data Types
+
+13-July-2022
+- Completed
+
+15-July-2022
+1. Array Operations
+	- Completed 
+	- Switch Case Messages are not Shown
+19-July-2022
+	- Note Completed
+
+==============================================================================================
+Jayprateek CHandra
+
+12-July-2022
+Math Operations
+Done
+
+13-July-2022
+String Operations
+
+15-July-2022
+Avoid Hard Coding
+
+19-July-2022
+Excellent Implementation with Innovation
+
+=============================================================================================
+
+
+Rishika Arya
+
+12-JUly-2022
+Modification for Data Type for POwer MUST be done
+
+13-July-2022
+String OPerations
+
+15-July-2022
+Array and List Operations
+
+19-July-2022
+MOdifications are needed
+
+=============================================================================================
+Santosh Rathod
+12-July-2022
+Completed, Nice implemented LOgic
+13-July-2002
+String OPerations are completed
+15-JUly-2022
+Completed with Nicely defined LOgic
+19-JUly-2022
+
+MOdifiction in Udate
+
+
+
+=============================================================================================
+
+
+Mukund Wagh
+12-July-2022
+
+Nicely defined logic, COmpleted, the type conversion must be added
+
+13-July-2022
+String OPerations
+Completed
+
+15-July-2022
+USng Arrays List
+Search Logic is implemented but the Original data is been modified, mUST try other way of sorting
+
+19-July-2022
+OOPs
+COmpleted, Modify messages
+
+==========================================================================================
+Ayush Naphade (Average logically)
+12-July-2022
+BAsic Calculation, MOdify the the Squareroot for Accurate results
+13-July-2022
+String Operations
+Completed
+15-july
+Repetation of string in array logic can be changed from sort(). Rest all are completed
+19-july
+Not Comleted
+
+==========================================================================================
+Abhiskel Goyal (Average)
+
+12-July-2022
+
+Completed by checking the data type
+
+13-july
+
+Nice logic written
+
+15-july
+Not complete the repetation
+
+19-JUly
+Completed, SHow data in Tabluar form in COnsole
+
+============================================================================================
+SHubhankar Dash
+12-July
+Completed
+
+13-July
+
+String OPerations Completed, Noce approach for the programming
+
+15-JUly
+
+STring OPerations are completed
+
+19-July
+
+OOPs Completed
+
+============================================================================================
+Divyanshi Jain (Good Logic)
+
+12-JUly
+COmpleted
+13-July
+String OPerations
+15-July
+Completed Nice implementation
+19-July
+Nicde UI, Completed
+
+============================================================================================
+Prathamesh Londhe
+
+12-July
+
+Completed
+
+13-July
+
+String OPerations
+
+15-July
+
+Will be doing using HashSet
+
+19-July
+
+OOPs, COmpleted
+==============================================================================================
+
+Pavan Vasa
+
+12-July
+
+Completed
+
+13-July
+
+Count of Special Characters
+
+15-July
+
+Great Logic for Repetation
+
+19-July
+
+Great Implementation
+
+=============================================================================================
+
+Divyansh Pal
+
+12-July
+
+COmpleted
+
+13-July
+STring OPerations COmpleted with Nice Logic
+
+15-July
+List and ARrays
+COmpleted Small changes are needed for Repetation
+
+19-July
+COmpleted
+
+
+
+
+
+

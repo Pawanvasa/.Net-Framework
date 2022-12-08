@@ -1,0 +1,17 @@
+﻿<h2>Album</h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+                @{
+                    foreach (var img in @ViewBag.imgPaths)
+                    {
+                        <img src="@Url.Content(img)" alt="Images" style="width:50%;height:50%" />
+                    }
+                }
+            </a>
+        </div>
+    </div>
+    </div>

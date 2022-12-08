@@ -1,0 +1,44 @@
+﻿@model E_Commerce.Models.EntityClasses.PaymentDetails
+
+<div>
+    <strong style=" position: relative; bottom: 3rem; right: 4rem;">PRICE DETAILS</strong>
+    <dl class="dl-horizontal" style="position:relative">
+        <dt style="position:relative;right:16rem">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt style="position:relative;right:135px">
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+        <dt style="position: relative; right: 85px">
+            @Html.DisplayNameFor(model => model.DeliveryCharges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryCharges)
+        </dd>
+        <dt style="position: relative; right: 46px">Secure Packaging Fee</dt>
+        <dd>@Html.DisplayFor(model => model.SecurePackagingFee)</dd>
+
+        <dt style="position:relative;right:117px;top:20px">
+            <strong>
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </strong>
+        </dt>
+        <dd style="font-weight:bold;position:relative;top:22px">
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+    </dl>
+</div>
+<div style="top: 14px; position: relative; color: green; font-weight: bold;">
+    You will save ₹ @(Model.Discount-Model.DeliveryCharges-Model.SecurePackagingFee) on this order
+</div>

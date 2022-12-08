@@ -1,0 +1,15 @@
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.csproj.AssemblyReference.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.AssemblyInfoInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.AssemblyInfo.cs
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.csproj.CoreCompileInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\bin\Debug\net6.0\DBCommand.exe
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\bin\Debug\net6.0\DBCommand.deps.json
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\bin\Debug\net6.0\DBCommand.runtimeconfig.json
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\bin\Debug\net6.0\DBCommand.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\bin\Debug\net6.0\DBCommand.pdb
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\refint\DBCommand.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.pdb
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\DBCommand.genruntimeconfig.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBCommand\obj\Debug\net6.0\ref\DBCommand.dll

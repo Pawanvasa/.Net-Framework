@@ -1,0 +1,42 @@
+﻿@model E_Commerce.Models.subCategory
+
+@{
+    ViewBag.Title = "GetById";
+}
+
+<h2>GetById</h2>
+
+<div>
+    <h4>subCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubcategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubcategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SubCategoryId }, htmlAttributes: new { style = "background-color: green;padding: 10px;color: aliceblue;border-radius: 6px;" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+<body style="background-image: url(../../img/Backgrounds/paymentbg.jpg); background-repeat: no-repeat; background-size: cover; }">
+    <div class="col-sm-8 row" style="background-color: darkgrey; border-radius: 19px; padding: 3rem; display: inline-block; position: relative; left: 10%; margin-top: 4%;">
+        <div class="col-75">
+            <div class="container">
+                @using (Html.BeginForm("PayemtSuccess", "Cart"))
+                {
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname" style=" position: relative; bottom: 1rem;">Accepted Cards</label>
+                            <img src="~/img/cards/mastercard.png" style="height: 5%; left: 10rem; position: relative;">
+                            <img src="~/img/cards/rupay.png" style="height:6%; position: relative; left: 2rem;">
+                            <img src="~/img/cards/visa.png" style=" height: 6%; position: relative; left: 2rem;">
+                            <br>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" style="position: relative; left: 18%;" required>
+                            <br>
+                            <br>
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" style="position: relative; left: 22px; " required>
+                            <br>
+                            <br>
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" style=" position: relative; left: 73px;" required>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018" style="position: relative; left: 86px; " required>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="password" id="cvv" name="cvv" placeholder="352" style="position: relative; left: 111px; " required>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <input class="btn-success" type="submit" value="Continue to checkout" style="background-color: brown; cursor: pointer; border-radius: 8px; padding: 7px; color: aliceblue; " />
+                }
+            </div>
+        </div>
+    </div>
+</body>

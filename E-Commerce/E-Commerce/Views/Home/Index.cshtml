@@ -1,0 +1,110 @@
+﻿@model IEnumerable<E_Commerce.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    <div>
+        <div id="themeSlider" class="carousel slide" data-ride="carousel" style="position:absolute; display: inline-block; width: 100%; right:0px; top: 10rem;">
+            <ol class="carousel-indicators">
+                <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#themeSlider" data-slide-to="1"></li>
+                <li data-target="#themeSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="imgOverlay"></div>
+                    <a href="@Url.Action("Index")">
+                        <img style="height:58rem;width:100%" src="~/img/Slider/5092428.jpg" alt="First slide">
+                        <div class="carousel-caption">
+                            <h3>Sale</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+
+                    <div class="imgOverlay"></div>
+                    <a href="@Url.Action("Index")">
+
+                        <img style="height:58rem;width:100%" src="~/img/Slider/5815.jpg" alt="Second slide">
+                        <div class="carousel-caption">
+                            <h3>50% Off</h3>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <div class="imgOverlay"></div>
+                    <a href="@Url.Action("Index")">
+
+                        <img style="height:58rem;width:100%" src="~/img/Slider/5984333.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h3>Latest</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <div class="imgOverlay"></div>
+                    <a href="@Url.Action("Index")">
+
+                        <img style="height:58rem;width:100%" src="~/img/Slider/sale.jpg" alt="Fourth slide">
+                        <div class="carousel-caption">
+                            <h3>Latest</h3>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+                <span class="fa fa-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#themeSlider" data-slide="next">
+                <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <table class="table" style="margin-top:68rem">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content(item.ProductImage)" alt="Error" style="border-radius:8px;height:16rem;width:12rem" />
+                    </td>
+                    <td>
+                        <strong>
+                            @Html.ActionLink(@item.productName, "GetProductById", "Product", new { id = item.ProductId }, null)
+                        </strong>
+                        <br>
+                        <div style="color: aliceblue;font-weight:bold; background-color: green; display: inline-block; padding-left: 8px; padding-right: 8px; border-radius: 6px;"> @(new Random().Next(2,5)) &#x2605;</div>
+                        <br />
+                        <strong>
+                            &#x20B9 @(item.ProductPrice-item.Discount)
+                        </strong> <s>@Html.DisplayFor(modelItem => item.ProductPrice)</s>
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    @if (User.Identity.Name != "Admin")
+                    {
+                        <td>
+                            @using (Html.BeginForm("GetAddresses", "ShippingDetails", new { ship = item.ProductId }))
+                            {
+                                <input type="submit" value="Buy Now" style="width:10rem" class="btn btn-success" />
+                            }
+                            <br>
+                            @using (Html.BeginForm("AddProductsToCart", "Cart", new { id = item.ProductId }))
+                            {
+                                <input type="submit" value="Add To Cart" class="btn btn-danger" />
+                            }
+                        </td>
+                    }
+
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+

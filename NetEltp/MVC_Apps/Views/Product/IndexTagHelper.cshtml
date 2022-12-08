@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "IndexTagHelper";
+}
+
+<h1>IndexTagHelper</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<list-generator objects="@Model"></list-generator>

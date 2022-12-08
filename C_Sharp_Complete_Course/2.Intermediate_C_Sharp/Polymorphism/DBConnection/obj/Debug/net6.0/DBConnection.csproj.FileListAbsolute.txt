@@ -1,0 +1,15 @@
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\bin\Debug\net6.0\DBConnection.exe
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\bin\Debug\net6.0\DBConnection.deps.json
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\bin\Debug\net6.0\DBConnection.runtimeconfig.json
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\bin\Debug\net6.0\DBConnection.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\bin\Debug\net6.0\DBConnection.pdb
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.csproj.AssemblyReference.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.AssemblyInfoInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.AssemblyInfo.cs
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.csproj.CoreCompileInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\refint\DBConnection.dll
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.pdb
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\DBConnection.genruntimeconfig.cache
+C:\DotNet\2.Intermediate_C_Sharp\DBConnection\obj\Debug\net6.0\ref\DBConnection.dll

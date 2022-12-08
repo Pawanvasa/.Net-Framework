@@ -1,0 +1,108 @@
+﻿@model E_Commerce.Models.UserTable
+
+@{
+    ViewBag.Title = "SignUp";
+}
+
+
+
+<script>
+    var check = function () {
+        if (document.getElementById('password').value ==
+            document.getElementById('confirm_password').value) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').innerHTML = 'Matching';
+        } else {
+            document.getElementById('message').style.color = 'red';
+            document.getElementById('message').innerHTML = 'Not Matching';
+        }
+    }
+</script>
+
+<h2 class="textColor" style="margin-top: 12rem; left: 20rem; position: relative;">SignUp</h2>
+
+<body class="regbgimage ">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal" style=" bottom: 4px; position: relative;">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group textColor">
+                <label asp-for="FirstName" class="control-label col-md-2">FirstName</label>
+                <div class="col-md-10">
+                    <input asp-for="FirstName" name="FirstName" class="form-control" required />
+                    @*<span asp-validation-for="FirstName" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <div class="form-group textColor">
+
+                <label asp-for="LastName" class="control-label col-md-2">LastName</label>
+                <div class="col-md-10">
+                    <input asp-for="LastName" name="LastName" class="form-control" required/>
+                    @*<span asp-validation-for="LastName" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+
+
+                </div>
+            </div>
+
+            <div class="form-group textColor">
+                <label asp-for="UserName" class="control-label col-md-2">UserName</label>
+                <div class="col-md-10">
+                    <input asp-for="UserName" name="UserName" class="form-control" required/>
+                    @*<span asp-validation-for="UserName" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <div class="form-group textColor">
+                <label asp-for="Password" class="control-label col-md-2">Password</label>
+                <div class="col-md-10">
+                    <input aps-for="Password" class="form-control" name="password" id="password" type="password" onkeyup='check();' required/>
+                    @*<span asp-validation-for="Password" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <div class="form-group textColor">
+                <label asp-for="Password" class="control-label col-md-2">Confirm Password</label>
+                <div class="col-md-10">
+                    <input class="form-control" name="confirm_password" id="confirm_password" type="password" onkeyup='check();' required/><span id='message'></span>
+                </div>
+            </div>
+            <div class="form-group textColor">
+                <label asp-for="Email" class="control-label col-md-2">Email</label>
+                <div class="col-md-10">
+                    <input asp-for="Email" type="email" name="Email" class="form-control" required/>
+                    @*<span asp-validation-for="Email" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <div class="form-group textColor">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="SignUp" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+</body>
+
+
+<div>
+    @Html.ActionLink("Back to Login", "Login", "Account")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

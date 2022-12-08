@@ -1,0 +1,102 @@
+﻿@model IEnumerable<E_Commerce.Models.orderTable>
+
+@{
+    ViewBag.Title = "Get";
+}
+
+<div style="margin-top:12rem">
+    <table class="table table-striped bg-danger table-hover">
+        <tr>
+            @*  <th>
+                    @Html.DisplayNameFor(model => model.OrderId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShippingId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductId)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiscountAmount)
+            </th>
+            <th>
+               @* @Html.DisplayNameFor(model => model.PayableAmount)*@
+                <p>Amount Paid</p>
+            </th>
+            <th>
+              @*  @Html.DisplayNameFor(model => model.IsCompleted)*@
+                <p>Order Status</p>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentType)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                @* <td>
+                        @Html.DisplayFor(modelItem => item.OrderId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShippingId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductId)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiscountAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PayableAmount)
+                </td>
+                @if (item.IsCompleted)
+                {
+                    <td>
+                       @* @Html.DisplayFor(modelItem => item.IsCompleted)*@
+                        On The Way
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <p>Cancelled</p>
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaymentType)
+                </td>
+                <td>
+                    @Html.ActionLink("Cancel", "CancelOrder", new { id = item.OrderId }, htmlAttributes: new { style = "background: brown;color: aliceblue;border-radius: 6px;padding: 7px;"})
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

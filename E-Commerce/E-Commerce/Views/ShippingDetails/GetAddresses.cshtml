@@ -1,0 +1,50 @@
+﻿@model IEnumerable<E_Commerce.Models.Shipping>
+
+@{
+    Layout = null;
+}
+
+
+
+<body style="background-image: url(../../img/Backgrounds/addressbg2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class=" jumbotron" style="position: relative; top: 100px;">
+        <div class="lead" style=" display: inline-block; padding-right: 78rem; padding-top: 12px; padding-bottom: 12px; font-weight: bold; background-color: cornflowerblue;">
+            DELIVERY ADDRESS
+        </div>
+        <div class="container" style="background-color: floralwhite;">
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    using (Html.BeginForm("PaymentPage", "Cart", new { ship = item.ShippingId}))
+                    {
+                        <div class="alert-danger" style="font-weight: bold; background-color: aliceblue; border: 1px solid black; border-radius: 8px; ">
+                            @*@Html.RadioButtonFor(modelItem => item.UserId, "")@item.Name*@
+                            @*<input type="radio" name="drone" value="@item.Name" /> @item.Name*@
+                            @*<input type="submit" name="ShippingId" value="@item.ShippingId" /><span>@item.Name</span>*@
+                            @Html.ActionLink(item.Name, "PaymentPage", "Cart", new { ship = item.ShippingId }, "")
+                            <br>
+                            @Html.DisplayFor(modelItem => item.Address)
+                            @Html.DisplayFor(modelItem => item.city)
+                            @Html.DisplayFor(modelItem => item.state)
+                            @Html.DisplayFor(modelItem => item.country)
+                            @Html.DisplayFor(modelItem => item.Pincode)
+                            @Html.DisplayFor(modelItem => item.Mobile)
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ShippingId })
+                        </div>
+                        <br>
+                    }
+                }
+            }
+            else
+            {
+                <div style="background-color: ghostwhite; padding: 8px; border-radius: 8px; cursor: pointer; display: inline-block; ">
+                    @Html.ActionLink("Create New Address", "Create")
+                </div>
+            }
+        </div>
+        <div style="background-color: cornflowerblue; padding: 8px; border-radius: 8px; cursor: pointer; display: inline-block; ">
+            @Html.ActionLink("Create New Address", "Create", null,htmlAttributes: new { style= "color: aliceblue;" })
+        </div>
+    </div>
+</body>

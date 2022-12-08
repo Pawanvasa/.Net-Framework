@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ClientNS.Product>
+@{
+    ViewData["Title"] = "getProducts";
+}
+
+<h1>getProducts</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductUniqueId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manufacturer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.products!)
+        {
+            <tr>
+                <td>
+                    @item.ProductUniqueId
+                </td>
+                <td>
+                    @item.ProductId
+                </td>
+                <td>
+                    @item.ProductName
+                </td>
+                <td>
+                    @item.Description
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                <td>
+                    @item.CategoryId
+                </td>
+                <td>
+                    @item.Manufacturer
+                </td>
+           @*     <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.ProductUniqueId}) |
+                    @Html.ActionLink("Details", "Details", new { id=item.ProductUniqueId}) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.ProductUniqueId})
+                </td>*@
+            </tr>
+        }
+    </tbody>
+</table>

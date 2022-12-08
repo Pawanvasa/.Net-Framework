@@ -1,0 +1,117 @@
+﻿@model IEnumerable<E_Commerce.Models.Product>
+
+@using E_Commerce.Models;
+@{
+    ViewBag.Title = "GetAllProductsOnCart";
+    var quntity = 0;
+}
+
+<script>
+    window.onload = function () {
+        loadView('@Url.Action("GetPayment", "Cart", new { userId = Convert.ToInt32(Session["UserId"])})');
+        function loadView(url) {
+            var http = new XMLHttpRequest();
+            http.onload = function () {
+                document.getElementById('dvView').innerHTML = http.responseText;
+            };
+            http.open("GET", url);
+            http.send();
+        }
+    };
+</script>
+
+<h2>GetAllProductsOnCart</h2>
+
+<div class="col-sm-8">
+    @if (@Model == null)
+    {
+        <h3>Cart is Empty</h3>
+    }
+    else
+    {
+        <table class="table" style="position: relative; top: 5rem;">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content(item.ProductImage)" alt="Error" style="height:16rem;width:12rem;border-radius:10px;" />
+
+
+                        <div>
+                            <div class="col-lg-2">
+                                <div class="input-group">
+                                    @using (Html.BeginForm("RemoveProducts", "Cart", new { id = item.ProductId }))
+                                    {
+                                        <span class="input-group-btn" style=" position: relative; right: 16px;">
+                                            <button style=" border-radius: 2rem;" type="submit" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" data-field="">
+                                                <span class="glyphicon glyphicon-minus"></span>
+                                            </button>
+                                        </span>
+                                    }
+                                    @if (TempData["Quantity"] != null)
+                                    {
+                                        foreach (var qun in (IEnumerable<Cart>)TempData["Quantity"])
+                                        {
+                                            TempData.Keep("Quantity");
+                                            if (item.ProductId == qun.ProductId)
+                                            {
+                                                quntity += qun.ProductCount;
+                                                <div style=" border-radius: 3px; padding-left: 28px; left: 23px; position: relative; bottom: 34px;" class="form-control input-number" min="1" max="100">
+                                                    <strong style=" position: relative; right: 8px;">@qun.ProductCount</strong>
+                                                </div>
+                                                break;
+                                            }
+                                        }
+                                    }
+
+
+                                    @using (Html.BeginForm("AddProductsToCart", "Cart", new { id = item.ProductId }))
+                                    {
+                                        <span class="input-group-btn" style="position: relative; left: 74px; bottom: 68px;">
+                                            <button type="submit" style=" border-radius: 2rem;" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                            </button>
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </td>
+                    <td>
+                        <strong>
+                            @Html.ActionLink(@item.productName, "GetProductById", "Product", new { id = item.ProductId }, null)
+                        </strong>
+                        <br>
+                        <div style="color: aliceblue;font-weight:bold; background-color: green; display: inline-block; padding-left: 8px; padding-right: 8px; border-radius: 6px;">4.5 &#x2605;</div>
+                        <br />
+                        <strong>
+                            &#x20B9 @(item.ProductPrice-item.Discount)
+                        </strong> <s>@Html.DisplayFor(modelItem => item.ProductPrice)</s>
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+</div>
+
+<div class="col-sm-2 jumbotron" id="dvView" style="position: fixed;  top: 12rem; left: 90rem; height: 20rem; width: 36rem;"></div>
+
+<div class="navbar bg-info navbar-fixed-bottom" style="position:fixed;width:70%; border-radius:8px">
+    <div class="container">
+        <strong style=" position: relative; top: 2rem;">Total Products :@quntity </strong>
+        @if (@Model.Count() > 0)
+        {
+            using (Html.BeginForm("GetAddresses", "ShippingDetails"))
+            {
+                <input class="btn-danger" type="submit" style=" position: relative; left: 69rem; height: 4rem; width: 16rem; border-radius: 6px; bottom: 12px;" value="Place Order" />
+            }
+        }
+    </div>
+</div>

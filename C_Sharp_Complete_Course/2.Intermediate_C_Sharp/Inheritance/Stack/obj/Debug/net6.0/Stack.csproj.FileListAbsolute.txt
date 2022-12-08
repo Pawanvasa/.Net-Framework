@@ -1,0 +1,15 @@
+C:\DotNet\2.Intermediate_C_Sharp\Stack\bin\Debug\net6.0\Stack.exe
+C:\DotNet\2.Intermediate_C_Sharp\Stack\bin\Debug\net6.0\Stack.deps.json
+C:\DotNet\2.Intermediate_C_Sharp\Stack\bin\Debug\net6.0\Stack.runtimeconfig.json
+C:\DotNet\2.Intermediate_C_Sharp\Stack\bin\Debug\net6.0\Stack.dll
+C:\DotNet\2.Intermediate_C_Sharp\Stack\bin\Debug\net6.0\Stack.pdb
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.csproj.AssemblyReference.cache
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.AssemblyInfoInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.AssemblyInfo.cs
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.csproj.CoreCompileInputs.cache
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.dll
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\refint\Stack.dll
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.pdb
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\Stack.genruntimeconfig.cache
+C:\DotNet\2.Intermediate_C_Sharp\Stack\obj\Debug\net6.0\ref\Stack.dll

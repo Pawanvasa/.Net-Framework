@@ -1,0 +1,31 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "DbErrorView";
+}
+
+<h1>DbErrorView</h1>
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+
+@if (Model != null)
+{
+    <div class="container">
+        <p class="alert alert-danger">
+            Error Occurred in @Model.ControllerName in its @Model.ActonName ation method.
+            The Error is @Model.ErrorMessage
+        </p>
+    </div>
+    <a asp-action="@Model.ActonName" asp-controller="@Model.ControllerName">Go Back</a>
+}
+else
+{
+    <div class="container">
+        <p class="alert alert-danger">
+            Error Occurred in @ViewData["Controller"] COntroller in its @ViewData["Action"] action method.
+            The Error is @ViewData["ErrorMessage"]
+        </p>
+    </div>
+    <a asp-action="@ViewData["Action"]" asp-controller="@ViewData["Controller"]">Go Back</a>
+}

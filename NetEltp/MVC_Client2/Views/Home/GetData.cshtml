@@ -1,0 +1,76 @@
+﻿@model IEnumerable<ClientNS.ResponseObject>
+@{
+    ViewData["Title"] = "GetData";
+}
+
+<h1>GetData</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                OrderId
+            </th>
+            <th>
+                CustomerName
+            </th>
+            <th>
+                EmployeeName
+            </th>
+            <th>
+                OrderDate
+            </th>
+            <th>
+                RequiredDate
+            </th>
+            <th>
+                ShippedDate
+            </th>
+            <th>
+                ShipperName
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            foreach (var cat in item.Categories)
+            {
+                <tr>
+                    <td>
+                        cat.Orderid
+                    </td>
+                    <td>
+                        cat.CustomerName
+                    </td>
+                    <td>
+                        cat.EmployeeName
+                    </td>
+                    <td>
+                        cat.OrderDate
+                    </td>
+                    <td>
+                        cat.RequiredDate
+                    </td>
+                    <td>
+                        cat.ShippedDate
+                    </td>
+                    <td>
+                        cat.ShipperName
+                    </td>
+                    <td>
+                        cat.ShipperName
+                    </td>
+                </tr>
+            }
+          
+                @*     <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductUniqueId}) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductUniqueId}) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductUniqueId})
+            </td>*@
+        }
+    </tbody>
+</table>
+

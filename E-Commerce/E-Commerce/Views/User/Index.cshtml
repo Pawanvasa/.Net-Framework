@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div style=" padding: 6rem; margin-top: 10rem; background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);display: inline-block; border-radius: 10px; position: relative; left: 22%;">
+<h2>
+    @Html.ActionLink("Edit Profile", "Edit",new { id = Session["UserId"]})
+</h2>
+</div>
+
+<div style=" padding: 6rem; margin-top: 10rem; background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); display: inline-block; border-radius: 10px; position: relative; left: 26%;">
+    <h2 >
+        @Html.ActionLink("Track Orders", "GetById","Order")
+    </h2>
+</div>

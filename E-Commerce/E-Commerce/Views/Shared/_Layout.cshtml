@@ -1,0 +1,126 @@
+﻿
+@{
+    var cat = (List<E_Commerce.Models.category>)Session["Cats"];
+    bool isLoggedIn = true;
+    if (string.IsNullOrWhiteSpace(User.Identity.Name))
+    {
+        isLoggedIn = false;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar  navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Shop At Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    @{
+                        if (isLoggedIn)
+                        {
+                            <li>@Html.ActionLink("SignOut", "SignOut", "Account")</li>
+
+                            if (User.Identity.Name == "Admin")
+                            {
+                                <li>@Html.ActionLink($"Hello {User.Identity.Name}!", "Get", "User", "", htmlAttributes: new { style = "position: relative;left: 48rem;font-weight: bold;color: aliceblue;font-size: 2rem;" })</li>
+                            }
+                            else
+                            {
+                                <li>@Html.ActionLink($"Hello {User.Identity.Name}!", "Index", "User", "", htmlAttributes: new { style = "position: relative;left: 48rem;font-weight: bold;color: aliceblue;font-size: 2rem;" })</li>
+                            }
+
+                            <li>
+                                <a href="@Url.Action("GetAllProductsOnCart", "Cart")" style="cursor:pointer">
+                                    <img src="~/img/shopping-cart.png" style=" position: absolute; top: 4px; left: 60rem;" class="cart">
+                                </a>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                            <li>@Html.ActionLink("Register", "SignUp", "Account")</li>
+                        }
+                    }
+                    <li>
+                        @using (@Html.BeginForm("SearchProducts", "Product"))
+                        {
+                            <div class="navbar-light bg-light center">
+                                <div class="form-group">
+                                    <input name="searchTxt" style="position: absolute; top: 12px; padding-left: 2rem; " type="text" placeholder="Search" aria-label="Search" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="button" type="submit" value="Search" style="position: absolute;top: 12px;left: 205px" />
+                                </div>
+                            </div>
+                        }
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @if (cat != null && User.Identity.Name != "Admin")
+    {
+        <div class="navbar navbar-fixed-top navbar-inverse" style="top:50px;">
+            <div class="container">
+                <div class="">
+                    <ul class="nav navbar-nav nav-item ">
+                        @foreach (var items in cat)
+                        {
+                            var item = (E_Commerce.Models.category)items;
+                            <li>@Html.ActionLink(item.categoryName, "Categoryprods", "Home", new { categoryId = item.categoryid }, null)</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+    else if (User.Identity.Name == "Admin")
+    {
+        <div class="navbar navbar-inverse" style="position:fixed;top:50px;width:100%;z-index:1">
+            <div class="container">
+                <div class="">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Users", "Get", "User")</li>
+                        <li>@Html.ActionLink("Products", "Get", "Product")</li>
+                        @* <li>@Html.ActionLink("Shipping", "GetAddresses", "ShippingDetails")</li>*@
+                        <li>@Html.ActionLink("Categories", "Get", "Category")</li>
+                        <li>@Html.ActionLink("SubCategories", "Get", "SubCategory")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

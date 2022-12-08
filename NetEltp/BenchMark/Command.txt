@@ -1,0 +1,1 @@
+dotnet run -p BenchMark.csproj -c Release

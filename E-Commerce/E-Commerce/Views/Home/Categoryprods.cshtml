@@ -1,0 +1,51 @@
+﻿@model IEnumerable<E_Commerce.Models.Product>
+
+@{
+    ViewBag.Title = "Categoryprods";
+}
+
+<h2>Categoryprods</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" style="margin-top:4rem">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@Url.Content(item.ProductImage)" alt="Error" style="border-radius:8px;height:16rem;width:12rem" />
+            </td>
+            <td>
+                <strong>
+                    @Html.ActionLink(@item.productName, "GetProductById", "Product", new { id = item.ProductId }, null)
+                </strong>
+                <br>
+                <div style="color: aliceblue;font-weight:bold; background-color: green; display: inline-block; padding-left: 8px; padding-right: 8px; border-radius: 6px;">4.5 &#x2605;</div>
+                <br />
+                <strong>
+                    &#x20B9 @(item.ProductPrice-item.Discount)
+                </strong> <s>@Html.DisplayFor(modelItem => item.ProductPrice)</s>
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            @if (User.Identity.Name != "Admin")
+            {
+                <td>
+                    @using (Html.BeginForm("GetAddresses", "ShippingDetails", new { ship = item.ProductId }))
+                    {
+                        <input type="submit" value="Buy Now" style="width:10rem" class="btn btn-success" />
+                    }
+                    <br>
+                    @using (Html.BeginForm("AddProductsToCart", "Cart", new { id = item.ProductId }))
+                    {
+                        <input type="submit" value="Add To Cart" class="btn btn-danger" />
+                    }
+                </td>
+            }
+
+        </tr>
+    }
+</table>

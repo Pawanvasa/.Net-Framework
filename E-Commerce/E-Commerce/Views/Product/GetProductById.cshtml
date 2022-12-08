@@ -1,0 +1,63 @@
+﻿@model E_Commerce.Models.Product
+
+@{
+    ViewBag.Title = "GetProductById";
+}
+<body style="background-image:url('../../img/Backgrounds/ProductBg.jpg')">
+    <dl class="glyphicon-object-align-vertical" style="margin-top:4rem">
+        <dd>
+            <img src="@Url.Content(@Model.ProductImage)" />
+            @* @Html.DisplayFor(model => model.ProductImage)*@
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+    </dl>
+</body>
+
+<p>
+    <div style=" background-color: orange;display:inline-block;padding: 10px; border-radius: 10px;">
+        @Html.ActionLink("AddToCart", "AddProductsToCart", "Cart", new { id = Model.ProductId }, null)
+    </div>
+    <div style=" background-color: darkgreen; display: inline-block; padding: 10px; border-radius: 10px;">
+        @Html.ActionLink("BuyNow", "Index", new { id = Model.ProductId })
+    </div>
+</p>

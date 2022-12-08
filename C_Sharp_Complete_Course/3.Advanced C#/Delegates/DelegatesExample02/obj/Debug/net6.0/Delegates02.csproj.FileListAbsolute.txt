@@ -1,0 +1,15 @@
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\bin\Debug\net6.0\Delegates02.exe
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\bin\Debug\net6.0\Delegates02.deps.json
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\bin\Debug\net6.0\Delegates02.runtimeconfig.json
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\bin\Debug\net6.0\Delegates02.dll
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\bin\Debug\net6.0\Delegates02.pdb
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.csproj.AssemblyReference.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.AssemblyInfoInputs.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.AssemblyInfo.cs
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.dll
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\refint\Delegates02.dll
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.pdb
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\Delegates02.genruntimeconfig.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Delegates02\obj\Debug\net6.0\ref\Delegates02.dll

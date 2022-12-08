@@ -1,0 +1,68 @@
+﻿@model CatAndProd
+
+@{
+    ViewData["Title"] = "GetById";
+}
+
+<h1>GetById</h1>
+
+<h2>Category Details</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>CategoryId</th>
+            <th>ategoryName</th>
+            <th>BasePrice</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Category!)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td>@item.BasePrice</td>
+                <td>
+                    @Html.ActionLink("GetProducts", "GetById", new { id=item.CategoryId})
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model.Product!.Count() == 0)
+{
+    <h2>No Records Found</h2>
+}
+else
+{
+    <h2>
+        Product Details
+    </h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>CategoryId</th>
+                <th>Manufacturer</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Product!)
+            {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.Description</td>
+                    <td>@item.Price</td>
+                    <td>@item.CategoryId</td>
+                    <td>@item.Manufacturer</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

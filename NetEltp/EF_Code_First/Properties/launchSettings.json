@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "EF_Code_First": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63133;http://localhost:63134"
+    }
+  }
+}

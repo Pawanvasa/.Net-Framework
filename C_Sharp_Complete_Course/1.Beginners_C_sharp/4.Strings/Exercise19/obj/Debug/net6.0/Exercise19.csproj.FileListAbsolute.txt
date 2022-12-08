@@ -1,0 +1,15 @@
+C:\DotNet\Beginners_C_sharp\Exercise19\bin\Debug\net6.0\Exercise19.exe
+C:\DotNet\Beginners_C_sharp\Exercise19\bin\Debug\net6.0\Exercise19.deps.json
+C:\DotNet\Beginners_C_sharp\Exercise19\bin\Debug\net6.0\Exercise19.runtimeconfig.json
+C:\DotNet\Beginners_C_sharp\Exercise19\bin\Debug\net6.0\Exercise19.dll
+C:\DotNet\Beginners_C_sharp\Exercise19\bin\Debug\net6.0\Exercise19.pdb
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.csproj.AssemblyReference.cache
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.AssemblyInfoInputs.cache
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.AssemblyInfo.cs
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.csproj.CoreCompileInputs.cache
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.dll
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\refint\Exercise19.dll
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.pdb
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\Exercise19.genruntimeconfig.cache
+C:\DotNet\Beginners_C_sharp\Exercise19\obj\Debug\net6.0\ref\Exercise19.dll

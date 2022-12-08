@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="CartId" />
+    </Key>
+    <Property Name="CartId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="CartSatus" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserTable" Relationship="Self.FK_Cart2" FromRole="Cart" ToRole="UserTable" />
+    <Property Name="ProductCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="categoryid" />
+    </Key>
+    <Property Name="categoryid" Type="Int32" Nullable="false" />
+    <Property Name="categoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="subCategories" Relationship="Self.FK_Subcategory" FromRole="category" ToRole="subCategory" />
+  </EntityType>
+  <EntityType Name="orderTable">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="ShippingId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="TotalAmount" Type="Int32" Nullable="false" />
+    <Property Name="DiscountAmount" Type="Int32" Nullable="false" />
+    <Property Name="PayableAmount" Type="Int32" Nullable="false" />
+    <Property Name="IsCompleted" Type="Boolean" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="orderDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PaymentType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="UserTable" Relationship="Self.FK_OrderTable1" FromRole="orderTable" ToRole="UserTable" />
+    <NavigationProperty Name="Shipping" Relationship="Self.FK_OrderTable2" FromRole="orderTable" ToRole="Shipping" />
+    <NavigationProperty Name="orderTable1" Relationship="Model.FK_orderTable_orderTable" FromRole="orderTable" ToRole="orderTable1" />
+    <NavigationProperty Name="orderTable2" Relationship="Model.FK_orderTable_orderTable" FromRole="orderTable1" ToRole="orderTable" />
+    <NavigationProperty Name="Product" Relationship="Model.FK_OrderTable3" FromRole="orderTable" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="RoleTable">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserTables" Relationship="Self.FK_UserTable_RoleTable1" FromRole="RoleTable" ToRole="UserTable" />
+  </EntityType>
+  <EntityType Name="Shipping">
+    <Key>
+      <PropertyRef Name="ShippingId" />
+    </Key>
+    <Property Name="ShippingId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="country" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pincode" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="orderTables" Relationship="Self.FK_OrderTable2" FromRole="Shipping" ToRole="orderTable" />
+    <NavigationProperty Name="UserTable" Relationship="Self.FK_Shipping" FromRole="Shipping" ToRole="UserTable" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="subCategory">
+    <Key>
+      <PropertyRef Name="SubCategoryId" />
+    </Key>
+    <Property Name="SubCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="categoryId" Type="Int32" />
+    <Property Name="SubcategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Discription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="category" Relationship="Self.FK_Subcategory" FromRole="subCategory" ToRole="category" />
+    <NavigationProperty Name="Products" Relationship="Model.FK_Porduct" FromRole="subCategory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserTable">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountCreated" Type="DateTime" Precision="0" />
+    <Property Name="RoleId" Type="Int32" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_Cart2" FromRole="UserTable" ToRole="Cart" />
+    <NavigationProperty Name="orderTables" Relationship="Self.FK_OrderTable1" FromRole="UserTable" ToRole="orderTable" />
+    <NavigationProperty Name="RoleTable" Relationship="Self.FK_UserTable_RoleTable1" FromRole="UserTable" ToRole="RoleTable" />
+    <NavigationProperty Name="Shippings" Relationship="Self.FK_Shipping" FromRole="UserTable" ToRole="Shipping" />
+  </EntityType>
+  <Association Name="FK_Cart2">
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="0..1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTable">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcategory">
+    <End Role="category" Type="Self.category" Multiplicity="0..1" />
+    <End Role="subCategory" Type="Self.subCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="categoryid" />
+      </Principal>
+      <Dependent Role="subCategory">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderTable1">
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="0..1" />
+    <End Role="orderTable" Type="Self.orderTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTable">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="orderTable">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderTable2">
+    <End Role="Shipping" Type="Self.Shipping" Multiplicity="0..1" />
+    <End Role="orderTable" Type="Self.orderTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shipping">
+        <PropertyRef Name="ShippingId" />
+      </Principal>
+      <Dependent Role="orderTable">
+        <PropertyRef Name="ShippingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserTable_RoleTable1">
+    <End Role="RoleTable" Type="Self.RoleTable" Multiplicity="0..1" />
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleTable">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserTable">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shipping">
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="0..1" />
+    <End Role="Shipping" Type="Self.Shipping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTable">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Shipping">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="orderTables" EntityType="Self.orderTable" />
+    <EntitySet Name="RoleTables" EntityType="Self.RoleTable" />
+    <EntitySet Name="Shippings" EntityType="Self.Shipping" />
+    <EntitySet Name="subCategories" EntityType="Self.subCategory" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="UserTables" EntityType="Self.UserTable" />
+    <AssociationSet Name="FK_Cart2" Association="Self.FK_Cart2">
+      <End Role="UserTable" EntitySet="UserTables" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcategory" Association="Self.FK_Subcategory">
+      <End Role="category" EntitySet="categories" />
+      <End Role="subCategory" EntitySet="subCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderTable1" Association="Self.FK_OrderTable1">
+      <End Role="UserTable" EntitySet="UserTables" />
+      <End Role="orderTable" EntitySet="orderTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderTable2" Association="Self.FK_OrderTable2">
+      <End Role="Shipping" EntitySet="Shippings" />
+      <End Role="orderTable" EntitySet="orderTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserTable_RoleTable1" Association="Self.FK_UserTable_RoleTable1">
+      <End Role="RoleTable" EntitySet="RoleTables" />
+      <End Role="UserTable" EntitySet="UserTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shipping" Association="Self.FK_Shipping">
+      <End Role="UserTable" EntitySet="UserTables" />
+      <End Role="Shipping" EntitySet="Shippings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_orderTable_orderTable" Association="Model.FK_orderTable_orderTable">
+      <End Role="orderTable" EntitySet="orderTables" />
+      <End Role="orderTable1" EntitySet="orderTables" />
+    </AssociationSet>
+    <EntitySet Name="Products" EntityType="Model.Product" />
+    <AssociationSet Name="FK_OrderTable3" Association="Model.FK_OrderTable3">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="orderTable" EntitySet="orderTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Porduct" Association="Model.FK_Porduct">
+      <End Role="subCategory" EntitySet="subCategories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_orderTable_orderTable">
+    <End Type="Model.orderTable" Role="orderTable" Multiplicity="1" />
+    <End Type="Model.orderTable" Role="orderTable1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="orderTable">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="orderTable1">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SubCategoryId" Type="Int32" />
+    <Property Name="ProductPrice" Type="Int32" Nullable="false" />
+    <Property Name="Discount" Type="Int32" />
+    <Property Name="ProductImage" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="orderTables" Relationship="Model.FK_OrderTable3" FromRole="Product" ToRole="orderTable" />
+    <NavigationProperty Name="subCategory" Relationship="Model.FK_Porduct" FromRole="Product" ToRole="subCategory" />
+  </EntityType>
+  <Association Name="FK_OrderTable3">
+    <End Type="Model.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Model.orderTable" Role="orderTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="orderTable">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Porduct">
+    <End Type="Model.subCategory" Role="subCategory" Multiplicity="0..1" />
+    <End Type="Model.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subCategory">
+        <PropertyRef Name="SubCategoryId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

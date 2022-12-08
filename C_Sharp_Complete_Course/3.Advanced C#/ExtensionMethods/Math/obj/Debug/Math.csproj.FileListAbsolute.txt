@@ -1,0 +1,6 @@
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\bin\Debug\Math.dll
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\bin\Debug\Math.pdb
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\obj\Debug\Math.csproj.AssemblyReference.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\obj\Debug\Math.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\obj\Debug\Math.dll
+C:\Users\Coditas\Downloads\CSharpIntermediate\Math\obj\Debug\Math.pdb

@@ -1,0 +1,15 @@
+C:\DotNet\Beginners_C_sharp\Exercise10\bin\Debug\net6.0\Exercise10.exe
+C:\DotNet\Beginners_C_sharp\Exercise10\bin\Debug\net6.0\Exercise10.deps.json
+C:\DotNet\Beginners_C_sharp\Exercise10\bin\Debug\net6.0\Exercise10.runtimeconfig.json
+C:\DotNet\Beginners_C_sharp\Exercise10\bin\Debug\net6.0\Exercise10.dll
+C:\DotNet\Beginners_C_sharp\Exercise10\bin\Debug\net6.0\Exercise10.pdb
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.csproj.AssemblyReference.cache
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.AssemblyInfoInputs.cache
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.AssemblyInfo.cs
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.csproj.CoreCompileInputs.cache
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.dll
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\refint\Exercise10.dll
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.pdb
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\Exercise10.genruntimeconfig.cache
+C:\DotNet\Beginners_C_sharp\Exercise10\obj\Debug\net6.0\ref\Exercise10.dll

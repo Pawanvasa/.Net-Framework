@@ -1,0 +1,15 @@
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\bin\Debug\net6.0\Exercise03.exe
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\bin\Debug\net6.0\Exercise03.deps.json
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\bin\Debug\net6.0\Exercise03.runtimeconfig.json
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\bin\Debug\net6.0\Exercise03.dll
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\bin\Debug\net6.0\Exercise03.pdb
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.csproj.AssemblyReference.cache
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.AssemblyInfoInputs.cache
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.AssemblyInfo.cs
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.csproj.CoreCompileInputs.cache
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.dll
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\refint\Exercise03.dll
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.pdb
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\Exercise03.genruntimeconfig.cache
+C:\DotNet\Beginners_C_sharp\1.Beginners_C_sharp\1.Conditionals\Exercise03\obj\Debug\net6.0\ref\Exercise03.dll
