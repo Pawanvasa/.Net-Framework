@@ -1,0 +1,43 @@
+html{
+    font-size: 16px;
+}
+
+.container{
+background-color: rgb(214, 244, 244);
+padding: 8rem;
+}
+
+.child1{
+    background-color: red;
+    padding: 2rem;
+    border: 1rem solid;
+    margin: 2rem;
+}   
+
+.child2{
+    background-color: yellow;
+    padding: 2rem;
+    border: 1rem solid;
+    margin: 2rem;
+}
+
+.child3{
+    background-color: green;
+    padding: 2em;
+    border: 1em solid;
+    margin: 2em;
+}
+
+.child4{
+    background-color: orange;
+    padding: 2em;
+    border: 1em solid;
+    margin: 2em;
+}
+
+.container2{
+    padding: 2rem;
+    background-color: brown;
+    height:3em;
+    width: 8em;
+}

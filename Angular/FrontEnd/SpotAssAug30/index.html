@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Properties</title>
+</head>
+<body>
+    <main>
+    <!--Combination 1-->
+    <h2>1.justify:flex-start align:flex-start</h2>
+    <div class="parent-row flex-direction-row flex-start-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>2.justify:flex-start align:center</h2>
+    <div class="parent-row flex-direction-row flex-start-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>3.justify:flex-start align:flex-end</h2>
+    <div class="parent-row flex-start-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>4.justify:flex-start align:stretch</h2>
+    <div class="parent-row flex-start-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>5.justify:flex-start  align:space-around</h2>
+    <div class="parent-row flex-start-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>6.justify:flex-start  align:space-evenly</h2>
+    <div class="parent-row flex-start-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>7.justify:flex-start  align:space-between</h2>
+    <div class="parent-row flex-start-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 2-->
+    <h2>8.justify:center  align:flex-start</h2>
+    <div class="parent-row center-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>9.justify:center  align:center</h2>
+    <div class="parent-row center-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>10.justify:center  align:flex-end</h2>
+    <div class="parent-row center-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>11.justify:center  align:stretch</h2>
+    <div class="parent-row center-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>12.justify:center  align:space-around</h2>
+    <div class="parent-row center-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>13.justify:center  align:space-evenly</h2>
+    <div class="parent-row center-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>14.justify:center  align:space-between</h2>
+    <div class="parent-row center-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 3-->
+    <h2>15.justify:flex-end  align:flex-start</h2>
+    <div class="parent-row flex-end-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>16.justify:flex-end  align:center</h2>
+    <div class="parent-row flex-end-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>17.justify:flex-end  align:flex-end</h2>
+    <div class="parent-row flex-end-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>18.justify:flex-end  align:stretch</h2>
+    <div class="parent-row flex-end-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>19.justify:flex-end  align:space-around</h2>
+    <div class="parent-row flex-end-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>20..justify:flex-end  align:space-evenly</h2>
+    <div class="parent-row flex-end-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>21.justify:flex-end  align:space-between</h2>
+    <div class="parent-row flex-end-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+   <!--Combination 4-->
+    <h2>22.justify:stretch  align:flex-start</h2>
+    <div class="parent-row stretch-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>23.justify:stretch  align:center</h2>
+    <div class="parent-row stretch-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>24.justify:stretch  align:flex-end</h2>
+    <div class="parent-row stretch-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>25.justify:stretch  align:stretch</h2>
+    <div class="parent-row stretch-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>26.justify:stetch  align:space-around</h2>
+    <div class="parent-row stretch-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>27.justify:stetch  align:space-evenly</h2>
+    <div class="parent-row stretch-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>28.justify:stetch  align:space-between</h2>
+    <div class="parent-row stretch-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 5-->
+    <h2>29.justify:space-around  align:flex-start</h2>
+    <div class="parent-row space-around-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>30.justify:space-around  align:center</h2>
+    <div class="parent-row space-around-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>31.justify:space-around  align:flex-end</h2>
+    <div class="parent-row space-around-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>32.justify:space-around  align:stretch</h2>
+    <div class="parent-row space-around-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>33.justify:space-around  align:space-around</h2>
+    <div class="parent-row space-around-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>34.justify:space-around  align:space-evenly</h2>
+    <div class="parent-row space-around-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>35.justify:space-around  align:space-between</h2>
+    <div class="parent-row space-around-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+        <!--Combination 6-->
+        <h2>36.justify:space-evenly  align:flex-start</h2>
+        <div class="parent-row space-evenly-justify flex-start-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>37.justify:space-evenly  align:center</h2>
+        <div class="parent-row space-evenly-justify center-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>38.justify:space-evenly  align:flex-end</h2>
+        <div class="parent-row space-evenly-justify flex-end-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>39.justify:space-evenly  align:stretch</h2>
+        <div class="parent-row space-evenly-justify stretch-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>40.justify:space-evenly  align:space-around</h2>
+        <div class="parent-row space-evenly-justify space-around-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>41.justify:space-evenly  align:space-evely</h2>
+        <div class="parent-row space-evenly-justify space-evenly-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>42.justify:space-evenly  align:space-between</h2>
+        <div class="parent-row space-evenly-justify space-between-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+
+         <!--Combination 7-->
+         <h2>43.justify:space-between  align:flex-start</h2>
+         <div class="parent-row space-between-justify flex-start-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>44.justify:space-between  align:center</h2>
+         <div class="parent-row space-between-justify center-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>45.justify:space-between  align:flex-end</h2>
+         <div class="parent-row space-between-justify flex-end-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>46.justify:space-between  align:stretch</h2>
+         <div class="parent-row space-between-justify stretch-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>47.justify:space-between  align:space-around</h2>
+         <div class="parent-row space-between-justify space-around-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>48.justify:space-between  align:space-evenly</h2>
+         <div class="parent-row space-between-justify space-evenly-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>49.justify:space-between  align:space-between</h2>
+         <div class="parent-row space-between-justify space-between-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+
+    <!--Combination 1-->
+    <h2>parent-50</h2>
+    <div class="parent-col .flex-direction-col .flex-direction-col flex-start-justify 
+        flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-51</h2>
+    <div class="parent-col  .flex-direction-col .flex-direction-col flex-start-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-52</h2>
+    <div class="parent-col  .flex-direction-col .flex-direction-col flex-start-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-53</h2>
+    <div class="parent-col  .flex-direction-col .flex-direction-col flex-start-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-54</h2>
+    <div class="parent-col .flex-direction-col flex-start-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-55</h2>
+    <div class="parent-col .flex-direction-col flex-start-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-56</h2>
+    <div class="parent-col .flex-direction-col flex-start-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 2-->
+    <h2>parent-57</h2>
+    <div class="parent-col .flex-direction-col center-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-58</h2>
+    <div class="parent-col .flex-direction-col center-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-59</h2>
+    <div class="parent-col .flex-direction-col center-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-60</h2>
+    <div class="parent-col .flex-direction-col center-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-61</h2>
+    <div class="parent-col .flex-direction-col center-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-62</h2>
+    <div class="parent-col .flex-direction-col center-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-63</h2>
+    <div class="parent-col .flex-direction-col center-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 3-->
+    <h2>parent-64</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-65</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-66</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-67</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-68</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-69</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-70</h2>
+    <div class="parent-col .flex-direction-col flex-end-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+   <!--Combination 4-->
+    <h2>parent-71</h2>
+    <div class="parent-col .flex-direction-col stretch-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-72</h2>
+    <div class="parent-col .flex-direction-col stretch-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-73</h2>
+    <div class="parent-col .flex-direction-col stretch-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-74</h2>
+    <div class="parent-col .flex-direction-col stretch-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-75</h2>
+    <div class="parent-col .flex-direction-col stretch-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-76</h2>
+    <div class="parent-col .flex-direction-col stretch-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-77</h2>
+    <div class="parent-col .flex-direction-col stretch-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+    <!--Combination 5-->
+    <h2>parent-78</h2>
+    <div class="parent-col .flex-direction-col space-around-justify flex-start-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-79</h2>
+    <div class="parent-col .flex-direction-col space-around-justify center-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-80</h2>
+    <div class="parent-col .flex-direction-col space-around-justify flex-end-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-81</h2>
+    <div class="parent-col .flex-direction-col space-around-justify stretch-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-82</h2>
+    <div class="parent-col .flex-direction-col space-around-justify space-around-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-83</h2>
+    <div class="parent-col .flex-direction-col space-around-justify space-evenly-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+    <h2>parent-84</h2>
+    <div class="parent-col .flex-direction-col space-around-justify space-between-align">
+        <div class="child"><span>item 1</span></div>
+        <div class="child"><span>item 2</span></div>
+        <div class="child"><span>item 3</span></div>
+    </div>
+
+        <!--Combination 6-->
+        <h2>parent-85</h2>
+        <div class="parent-col .flex-direction-col space-around-justify flex-start-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-86</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify center-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-87</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify flex-end-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-88</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify stretch-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-89</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify space-around-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-90</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify space-evenly-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+        <h2>parent-91</h2>
+        <div class="parent-col .flex-direction-col space-evenly-justify space-between-align">
+            <div class="child"><span>item 1</span></div>
+            <div class="child"><span>item 2</span></div>
+            <div class="child"><span>item 3</span></div>
+        </div>
+
+         <!--Combination 7-->
+         <h2>parent-92</h2>
+         <div class="parent-col .flex-direction-col space-between-justify flex-start-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-93</h2>
+         <div class="parent-col .flex-direction-col space-between-justify center-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-94</h2>
+         <div class="parent-col .flex-direction-col space-between-justify flex-end-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-95</h2>
+         <div class="parent-col .flex-direction-col space-between-justify stretch-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-96</h2>
+         <div class="parent-col .flex-direction-col space-between-justify space-around-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-97</h2>
+         <div class="parent-col .flex-direction-col space-between-justify space-evenly-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+         <h2>parent-98</h2>
+         <div class="parent-col .flex-direction-col space-between-justify space-between-align">
+             <div class="child"><span>item 1</span></div>
+             <div class="child"><span>item 2</span></div>
+             <div class="child"><span>item 3</span></div>
+         </div>
+</main>
+</body>
+</html>

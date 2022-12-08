@@ -1,0 +1,28 @@
+.container{
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    background-color: aqua;
+}
+.child1{
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: red;
+    flex-grow:1 ;
+    flex-shrink: 1;
+    /* flex-basis: 100%; */
+}
+.child2{
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: green;
+    flex-grow:1 ;
+    flex-basis: 50%;
+}
+.child3{
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: black;
+    flex-grow:1 ;
+    flex-basis: 50%;
+}

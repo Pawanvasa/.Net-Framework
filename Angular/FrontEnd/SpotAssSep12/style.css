@@ -1,0 +1,83 @@
+.container{
+    display:grid;
+    padding: 1rem;
+    background-color: rgb(134, 32, 32);
+    grid-template-columns: repeat(4,0.5fr);
+    grid-template-rows: repeat(4,0.5fr);
+    gap: 1rem;
+}
+.profile{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    width: 4rem;
+}
+.item1{
+    display: flex;
+    padding: 2rem;
+    background-color:antiquewhite;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-content: space-between;
+    border-radius: 2rem;
+
+}
+.name{
+    padding:0.5rem 4rem;
+    background-color: rgb(100, 100, 216);
+    border-radius: 1rem;
+}
+
+.item2{
+    padding: 1rem;
+    background-color: antiquewhite;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:5;
+    border-radius: 2rem;
+
+}
+.item3{
+    padding: 1rem;
+    background-color: antiquewhite;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end:5;
+    border-radius: 2rem;
+
+}
+.child1{
+    padding: 2rem;
+    background-color: rgb(83, 30, 30);
+    margin-bottom:1rem;
+    display: inline-block;
+    width: 14rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+.child2{
+    padding: 2rem;
+    background-color: rgb(83, 30, 30);
+    border-radius: 1rem;
+    width: 14rem;
+}
+.item4{
+    padding: 1rem;
+    background-color: darkcyan;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    border-radius: 1rem;
+}
+h1,h2{
+    font-size: 2rem;
+}   
+span:hover{
+    color: azure;
+    cursor: pointer;
+}
