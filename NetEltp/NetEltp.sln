@@ -155,6 +155,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchApplication", "Search
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginAndRegistration", "LoginAndRegistration\LoginAndRegistration.csproj", "{7EAA70BB-0F05-41D3-B4AF-87DF3C3FC837}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonResult", "JsonResult", "{1FC10FC9-5625-4A81-95F5-EAC81440911E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDemo", "JsonDemo\JsonDemo.csproj", "{A58BC3FD-DE0F-411E-9AAA-D492946F010C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -413,6 +417,10 @@ Global
 		{7EAA70BB-0F05-41D3-B4AF-87DF3C3FC837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EAA70BB-0F05-41D3-B4AF-87DF3C3FC837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EAA70BB-0F05-41D3-B4AF-87DF3C3FC837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58BC3FD-DE0F-411E-9AAA-D492946F010C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58BC3FD-DE0F-411E-9AAA-D492946F010C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58BC3FD-DE0F-411E-9AAA-D492946F010C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58BC3FD-DE0F-411E-9AAA-D492946F010C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -483,6 +491,7 @@ Global
 		{77E88760-D4B8-4202-9B03-976C31C8C13A} = {1C204489-917B-4EF4-8920-89FA61EB9D61}
 		{CD13A4EE-D109-4D4B-A732-930EAC24B3C5} = {4F178E9D-03B1-42FB-AA15-E5E6A1DCFF05}
 		{7EAA70BB-0F05-41D3-B4AF-87DF3C3FC837} = {1047FA56-011E-4B84-B781-C5F428F02DF8}
+		{A58BC3FD-DE0F-411E-9AAA-D492946F010C} = {1FC10FC9-5625-4A81-95F5-EAC81440911E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72FE6FD3-5E6C-4248-814E-60039138D126}

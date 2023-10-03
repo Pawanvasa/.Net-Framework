@@ -1,0 +1,7 @@
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Coditas\source\repos\RabbitMQDemo\RabbitMQPublisher\obj\Debug\net6.0\AMQPPublisher.MvcApplicationPartsAssemblyInfo.cache

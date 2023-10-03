@@ -1,0 +1,15 @@
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\bin\Debug\net6.0\DDD.Infrastucture.deps.json
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\bin\Debug\net6.0\DDD.Infrastucture.dll
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\bin\Debug\net6.0\DDD.Infrastucture.pdb
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.csproj.CopyComplete
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.dll
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\refint\DDD.Infrastucture.dll
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\DDD.Infrastucture.pdb
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\obj\Debug\net6.0\ref\DDD.Infrastucture.dll
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\bin\Debug\net6.0\DDD.Domain.dll
+C:\Users\Coditas\source\repos\DominDrivenDesignPOC\DDD.Infrastucture\bin\Debug\net6.0\DDD.Domain.pdb

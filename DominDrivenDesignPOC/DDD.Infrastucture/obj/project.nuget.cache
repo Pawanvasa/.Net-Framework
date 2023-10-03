@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JDWLGJWHbVHNKGW+7dzpF0MTSBPGx69oqBvjRYcDcQ1gmDqIlZxSy4mrm4oK+hfIWN2K++pcltnREapVjUubeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\DominDrivenDesignPOC\\DDD.Infrastucture\\DDD.Infrastucture.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
