@@ -31,9 +31,9 @@ namespace Coditas.ECom.Repositories
             {
                 throw new Exception("Invalid Record");
             }
-            catch (Exception ex)
+            catch (Exception exe)
             {
-                throw ex;
+                throw exe;
             }
         }
 

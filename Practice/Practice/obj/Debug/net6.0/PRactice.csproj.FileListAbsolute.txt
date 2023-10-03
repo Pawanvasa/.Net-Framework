@@ -1,0 +1,15 @@
+C:\Users\Coditas\source\repos\PRactice\PRactice\bin\Debug\net6.0\PRactice.exe
+C:\Users\Coditas\source\repos\PRactice\PRactice\bin\Debug\net6.0\PRactice.deps.json
+C:\Users\Coditas\source\repos\PRactice\PRactice\bin\Debug\net6.0\PRactice.runtimeconfig.json
+C:\Users\Coditas\source\repos\PRactice\PRactice\bin\Debug\net6.0\PRactice.dll
+C:\Users\Coditas\source\repos\PRactice\PRactice\bin\Debug\net6.0\PRactice.pdb
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.dll
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\refint\PRactice.dll
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.pdb
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\PRactice.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\PRactice\PRactice\obj\Debug\net6.0\ref\PRactice.dll
